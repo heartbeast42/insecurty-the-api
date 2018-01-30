@@ -6,17 +6,14 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex("user_data").insert([
         {
-          // id: 1,
           lat: "0",
           lng: "0"
         },
         {
-          // id: 2,
           lat: "35",
           lng: "-105"
         },
         {
-          // id: 3,
           lat: "23",
           lng: "87"
         },

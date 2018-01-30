@@ -16,10 +16,15 @@ router.post("/", function(req, res, next) {
   db.user_data_NEW_ENTRY(req.body)
   .then(function(data) {
     db.user_data_ALL()
-    .then(function() {
+    .then(function(data) {
       res.send(data);
     });
   });
 });
+
+// deletes an entry from the database
+router.post("/delete", function() {
+  db.user_data_DELETE_ENTRY()
+})
 
 module.exports = router
