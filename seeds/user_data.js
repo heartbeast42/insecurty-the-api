@@ -19,7 +19,7 @@ exports.seed = function(knex, Promise) {
           // id: 3,
           lat: "23",
           lng: "87"
-        }
+        },
       ]);
     });
 };
