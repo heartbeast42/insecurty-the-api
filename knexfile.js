@@ -8,12 +8,11 @@ module.exports = {
     connection: {
       localhost: 3000,
       database: 'menu'
-    }
+    },
   },
 
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL
-  }
-
+  },
 };
