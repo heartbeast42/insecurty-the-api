@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ClarkWalker/insecurty-the-api#readme",
   "dependencies": {
+    "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "knex": "^0.14.2",
     "nodemon": "^1.14.11",
