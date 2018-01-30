@@ -1,6 +1,6 @@
 const db = require("./connection")
 
-module.exports = {
+const query = {
 
   user_data_ALL: function() {
     return (
@@ -10,3 +10,5 @@ module.exports = {
 
   // x: "y",
 }
+
+module.exports = query;

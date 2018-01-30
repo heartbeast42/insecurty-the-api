@@ -1,12 +1,17 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
-// import routes/api.js and router
 
-const path = require('path');
+// process requests and returns as json // I THINK THERE IS A MASTERY FOR THIS
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
-// use routes ...
+// get that api!
+const api = require("./routes/api.js");
+app.use("/", api);
 
-app.listen(port, function() {
+// server
+app.listen(port, () => {
   console.log(`listening on ${port}`);
-})
+});
