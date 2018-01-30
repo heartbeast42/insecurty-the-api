@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ClarkWalker/insecurty-the-api/issues"
   },
-  "homepage": "https://github.com/ClarkWalker/insecurty-the-api#readme"
+  "homepage": "https://github.com/ClarkWalker/insecurty-the-api#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "knex": "^0.14.2",
+    "nodemon": "^1.14.11",
+    "pg": "^7.4.1"
+  }
 }
