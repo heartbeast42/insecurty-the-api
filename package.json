@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ClarkWalker/insecurty-the-api#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "knex": "^0.14.2",

@@ -7,6 +7,10 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+// middleware
+const cors = require("cors")
+app.use(cors())
+
 // get that api!
 const api = require("./routes/api.js");
 app.use("/", api);
