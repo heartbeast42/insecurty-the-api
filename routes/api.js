@@ -17,14 +17,18 @@ router.post("/", function(req, res, next) {
   .then(function(data) {
     db.user_data_ALL()
     .then(function(data) {
-      res.send(data);
+      res.send(data).
+      then(// deletes an entry from the database
+      router.post("/delete", function() {
+        db.user_data_DELETE_ENTRY()
+      }))
     });
   });
 });
 
-// deletes an entry from the database
-router.post("/delete", function() {
-  db.user_data_DELETE_ENTRY()
-})
+// // deletes an entry from the database
+// router.post("/delete", function() {
+//   db.user_data_DELETE_ENTRY()
+// })
 
 module.exports = router

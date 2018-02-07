@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
       table.increments("id").primary();
       table.float("lat");
       table.float("lng");
-      table.timestamp("created_at").defaultTo(knex.fn.now())
+      table.string("created_at");
     })
   ]);
 };
